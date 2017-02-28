@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Over / Under
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Topic</ion-label>
+      <ion-input type="text" [(ngModel)]="topic"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-card class="ou_card" [hidden]="!topic">
+
+    <ion-card-header>
+      {{overUnder}}
+    </ion-card-header>
+
+    <ion-card-content [ngClass]=overUnder>
+      {{topic}} 
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
+

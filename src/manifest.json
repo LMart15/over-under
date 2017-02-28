@@ -1,0 +1,13 @@
+{
+  "name": "Over/Under",
+  "short_name": "Over/Under",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/icon/icon-512x512.jpg",
+    "sizes": "512x512",
+    "type": "image/jpg"
+  }],
+  "background_color": "#4e8ef7",
+  "theme_color": "#4e8ef7"
+}
