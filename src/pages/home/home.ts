@@ -1,6 +1,7 @@
 import {
   Component
 } from '@angular/core';
+import { Contacts} from 'ionic-native';
 
 
 @Component({
@@ -23,5 +24,16 @@ export class HomePage {
         return "Overrated"
      }
   }
+
+  pickContact() {
+      Contacts.pickContact()
+        .then(contact => {
+            this.topic = contact.displayName;
+        })
+        .catch(error => {
+          //User didn't select a contact
+        });
+  }
+
 }
 

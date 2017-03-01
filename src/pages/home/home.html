@@ -13,6 +13,9 @@
     <ion-item>
       <ion-label floating>Topic</ion-label>
       <ion-input type="text" [(ngModel)]="topic"></ion-input>
+      <button ion-button icon-only clear item-right (click)="pickContact()">
+        <ion-icon name="contact"></ion-icon>
+      </button>
     </ion-item>
 
   </ion-list>
